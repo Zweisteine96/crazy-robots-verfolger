@@ -1,0 +1,45 @@
+---
+description: Format rules for researcher trend reports (<researcher>/<Name>.md) and their papers.csv
+globs: */*.md,*/categories/*.md,*/papers.csv
+alwaysApply: false
+---
+
+# 研究者报告格式
+
+适用于 `<firstname_lastname>/<Firstname_Lastname>.md`、同目录 `papers.csv` 以及 `categories/<category-id>.md`（`docs/` 下的文件不适用）。
+
+## 报告结构
+按 `.cursor/skills/researcher-trend-analysis/TEMPLATE.md` 的章节顺序：一句话结论 → **数据速览（图表）** → 论文全景（按主题）→
+主要趋势 → 时间线 → 与 VLA/RL/world model 的关系 → 趋势判断 → 与我的研究方向的连接 → 与其他研究者的区别 →
+后续追踪问题 → 完整结论。图表紧跟结论，读者打开报告即可看到。
+
+## 论文全景
+- 每个主题小节以 2–4 句面向非专业读者的简介开头，末尾链接到该类别的深度分析文件
+  `→ 深度分析：[categories/<id>.md](categories/<id>.md)`，再放表格。长篇解释与逐篇分析放在类别文件里，主文件保持概览。
+- 表格列固定为 `年份 | 论文 | 要点`；论文列写 `[短名](https://arxiv.org/abs/XXXX.XXXXX)`。
+- 大团队工业论文（如 Physical Intelligence，≥15 作者）加 † 并在小节前说明符号含义。
+
+```markdown
+### 1C. 真实机器人 RL 后训练
+
+**这一类在研究什么：** 先用示范数据预训练，再在真实机器人上用 RL 提高精度与速度……→ 深度分析：[categories/rl-posttraining.md](categories/rl-posttraining.md)
+
+| 年份 | 论文 | 要点 |
+|---|---|---|
+| 2026 | [RL Token](https://arxiv.org/abs/2604.23073) † | 在 VLA 的紧凑读出表征上训练小型 actor–critic 头…… |
+```
+
+## 类别深度分析文件（`categories/<category-id>.md`）
+- 文件名 = `categories.json` 中的类别 ID（不用 1A/1B 这类会变的编号）。
+- 结构按 `CATEGORY_TEMPLATE.md`：研究什么 → 逐篇分析（按时间，覆盖该类别在 `papers.csv` 中的**全部**论文）→ 演进脉络 →
+  深度分析 → 与其他类别的连接 → 与我的研究方向的连接 → 待追踪问题。
+- 逐篇分析中的数字只能来自摘要；推断标"个人推断"。文件头链接回主报告。
+
+## 图表
+- 图放在 `figures/`，用相对路径 `![](figures/xxx.png)` 嵌入主报告的"数据速览"节，每张图后 1–3 句解读。
+- 图表数据一律来自 `papers.csv` + `arxiv_papers.json`，不要手写数字。
+
+## papers.csv
+- 列：`arxiv_id,category,short_name,note`；`category` 必须是 `categories.json` 中的 ID。
+- 主报告中出现的 arXiv 链接与 `papers.csv` 的行应一一对应；`categories/<id>.md` 中的链接应等于 `category == <id>` 的行
+  （`verify_links.py` 会提示不一致）。

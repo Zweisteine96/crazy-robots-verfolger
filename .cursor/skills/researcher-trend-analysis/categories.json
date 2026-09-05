@@ -1,0 +1,16 @@
+{
+  "generalist-vla": {"label": "Generalist VLA / robot foundation models", "label_zh": "通用机器人基础模型（VLA）", "color": "#1f77b4"},
+  "chunking-realtime": {"label": "Action chunking & real-time execution", "label_zh": "动作分块与实时执行", "color": "#ff7f0e"},
+  "rl-posttraining": {"label": "Real-robot RL post-training", "label_zh": "真实机器人 RL 后训练", "color": "#d62728"},
+  "test-time-steering": {"label": "Test-time steering & value learning for generative policies", "label_zh": "生成式策略的测试时引导与价值学习", "color": "#9467bd"},
+  "reasoning-hierarchy-memory": {"label": "Embodied reasoning, hierarchy & memory", "label_zh": "具身推理、层级控制与记忆", "color": "#2ca02c"},
+  "eval-reward-data": {"label": "Evaluation, reward models & data flywheel", "label_zh": "评估、奖励模型与数据飞轮", "color": "#8c564b"},
+  "scalable-value-learning": {"label": "Scalable value learning (RL foundations)", "label_zh": "可扩展价值学习（算法基础）", "color": "#17becf"},
+  "llm-agent-rl": {"label": "LLM / agent RL", "label_zh": "LLM 与智能体 RL", "color": "#7f7f7f"},
+  "world-model": {"label": "World models & video prediction", "label_zh": "世界模型与视频预测", "color": "#bcbd22"},
+  "humanoid-locomotion": {"label": "Humanoid & legged locomotion", "label_zh": "人形与腿足运动控制", "color": "#e377c2"},
+  "dexterous-manipulation": {"label": "Dexterous & tactile manipulation", "label_zh": "灵巧操作与触觉", "color": "#aec7e8"},
+  "sim2real": {"label": "Simulation, sim-to-real & data generation", "label_zh": "仿真、sim-to-real 与数据生成", "color": "#ffbb78"},
+  "human-robot-interaction": {"label": "Human-robot interaction & preferences", "label_zh": "人机交互与偏好学习", "color": "#98df8a"},
+  "other": {"label": "Other", "label_zh": "其他", "color": "#c7c7c7"}
+}

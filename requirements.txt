@@ -1,0 +1,3 @@
+# only needed for .cursor/skills/researcher-trend-analysis/scripts/plot_trends.py
+matplotlib>=3.7
+numpy>=1.24

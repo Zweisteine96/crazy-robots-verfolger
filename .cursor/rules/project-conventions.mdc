@@ -1,0 +1,32 @@
+---
+description: Core conventions for the crazy-robots-verfolger research-tracking project (language, structure, verification)
+alwaysApply: true
+---
+
+# crazy-robots-verfolger 项目约定
+
+## 语言
+- 默认用**中文**与用户交流并撰写报告；用户明确指定其他语言时才切换。
+- 论文名、方法名、技术术语（VLA、flow matching、UTD 等）保留英文。
+
+## 项目目的
+追踪机器人与 AI 领域重要研究者 / 实验室 2024 年以来的论文，从中归纳技术趋势，并与项目所有者自己的研究方向
+（physics-grounded human-motion prediction、uncertainty-aware crowd navigation、humanoid 长时域任务的
+skill-level world model）建立连接。
+
+## 目录结构
+- `<firstname_lastname>/<Firstname_Lastname>.md` — 研究者报告（主产物）
+- `<firstname_lastname>/papers.csv` — 该报告引用论文的分类数据（图表数据源）
+- `<firstname_lastname>/arxiv_papers.json` — arXiv 作者检索原始结果（链接核对依据）
+- `<firstname_lastname>/figures/` — 由脚本生成的图
+- `<firstname_lastname>/categories/<category-id>.md` — 每个论文类别一个深度分析文件（逐篇分析、演进、深度讨论）
+- `docs/onboarding.md` — 新协作者入门；`docs/decisions.md` — 决策与变更日志（项目记忆）
+- `.cursor/skills/researcher-trend-analysis/` — 分析流程、脚本、统一分类表
+
+## 硬性要求
+- 每篇引用的论文必须真实存在且给出可打开的链接（优先 arXiv 摘要页）；完成前运行
+  `scripts/verify_links.py` 并通过。不确定的 arXiv 编号一律不写。
+- 论文要点只写摘要中明确陈述的内容；推断标注为"个人推断"。
+- 论文分类只用 `.cursor/skills/researcher-trend-analysis/CATEGORIES.md` 中的类别 ID；需要新类别先在那里登记。
+- 做任何研究者分析 / 更新报告 / 加图时，先读取并遵循 `researcher-trend-analysis` skill。
+- 有意义的判断（分类取舍、口径变化、新增研究者）追加到 `docs/decisions.md`。

@@ -1,0 +1,74 @@
+arxiv_id,category,short_name,note
+2403.12945,generalist-vla,DROID,76k-trajectory in-the-wild manipulation dataset
+2405.12213,generalist-vla,Octo,open-source generalist policy on OXE
+2406.09246,generalist-vla,OpenVLA,7B open-source VLA
+2408.11812,generalist-vla,CrossFormer,one policy for 20 embodiments
+2410.24164,generalist-vla,pi0,VLM + flow-matching action head (PI)
+2501.09747,generalist-vla,FAST,DCT-based action tokenization (PI)
+2501.04693,generalist-vla,FuSe,heterogeneous sensors via language grounding
+2504.16054,generalist-vla,pi0.5,open-world generalization in unseen homes (PI)
+2505.23705,generalist-vla,Knowledge Insulation,protect VLM knowledge when adding action expert (PI)
+2509.19480,generalist-vla,OmniVLA,omni-modal goal conditioning for navigation
+2511.14759,generalist-vla,pi*0.6 / RECAP,VLA that learns from experience via offline RL + advantage conditioning (PI)
+2512.22414,generalist-vla,Human-to-Robot Transfer,human video transfer emerges with scale
+2604.15483,generalist-vla,pi0.7,steerable generalist via diverse context conditioning (PI)
+2506.07339,chunking-realtime,RTC,real-time chunking via inference-time inpainting (PI)
+2512.05964,chunking-realtime,Training-time RTC,simulate delay at training time (PI)
+2507.07969,chunking-realtime,Q-chunking,RL in chunked action space
+2512.10926,chunking-realtime,Decoupled Q-Chunking,critic chunk length decoupled from policy
+2512.08108,chunking-realtime,Offline MBRL w/ Action Chunks,action-chunk dynamics model for value expansion
+2602.13476,chunking-realtime,AsyncVLA,remote VLA + onboard edge adapter
+2608.02547,chunking-realtime,Why Action Chunking,non-Markovian expressivity explains chunking
+2608.23831,chunking-realtime,ARLI,latency-aware RL for generalist policies (PI)
+2401.16013,rl-posttraining,SERL,sample-efficient real-robot RL software suite
+2410.21845,rl-posttraining,HIL-SERL,human-in-the-loop RL reaches near-perfect success in 1-2.5h
+2412.09858,rl-posttraining,RLDG,RL-generated data to finetune generalists
+2412.07762,rl-posttraining,WSRL,online finetuning need not retain offline data
+2506.15799,rl-posttraining,DSRL,RL in latent noise space of diffusion policy
+2512.16911,rl-posttraining,Posterior BC,pretraining BC for efficient RL finetuning
+2512.08333,rl-posttraining,Parameter Merging,robust VLA finetuning preserving generalist skills
+2604.23073,rl-posttraining,RL Token,actor-critic head on a compact VLA readout token (PI)
+2605.03065,rl-posttraining,OGPO,off-policy full finetuning of generative policies
+2606.31958,rl-posttraining,SARL,RL over language prompt space of a generalist
+2606.23640,rl-posttraining,Success Visitation Matching,sparse outcome reward to dense process reward
+2410.13816,test-time-steering,V-GPS,value-guided action re-ranking at deployment
+2502.02538,test-time-steering,Flow Q-Learning,one-step policy distilled from flow trained with RL
+2505.23458,test-time-steering,CFGRL,diffusion guidance as policy improvement operator
+2601.14234,test-time-steering,QAM,Q-learning with adjoint matching for flow policies
+2606.11087,test-time-steering,QGF,test-time value-gradient guidance of flow policies
+2606.13675,test-time-steering,FRS,flow reversal steering of generalist policies
+2606.17551,test-time-steering,Reversal Q-Learning,flow steps as actions in an expanded MDP
+2407.08693,reasoning-hierarchy-memory,ECoT,embodied chain-of-thought for VLAs
+2502.19417,reasoning-hierarchy-memory,Hi Robot,hierarchical VLM for open-ended instructions (PI)
+2505.08243,reasoning-hierarchy-memory,Efficient Embodied Reasoning,why robot CoT helps and faster variants (PI)
+2502.16707,reasoning-hierarchy-memory,Reflective Planning,test-time reflection with imagined futures
+2507.09041,reasoning-hierarchy-memory,Behavioral Exploration,in-context exploration over expert behaviors
+2508.13446,reasoning-hierarchy-memory,CAST,counterfactual language labels for instruction following
+2510.19752,reasoning-hierarchy-memory,LITEN,VLM learns VLA affordances at inference time
+2602.13193,reasoning-hierarchy-memory,Steerable Policies,multi-level synthetic commands for VLM->VLA control (PI)
+2603.03596,reasoning-hierarchy-memory,MEM,multi-scale embodied memory for 15-min tasks (PI)
+2401.12963,eval-reward-data,AutoRT,foundation-model orchestrated fleet data collection
+2407.20635,eval-reward-data,SOAR,autonomous improvement of instruction following
+2503.24278,eval-reward-data,AutoEval,autonomous round-the-clock policy evaluation
+2503.18210,eval-reward-data,ViVa,video-trained value functions for online RL
+2506.18123,eval-reward-data,RoboArena,distributed double-blind pairwise evaluation
+2512.16881,eval-reward-data,PolaRiS,real-to-sim evaluation environments
+2601.00675,eval-reward-data,RoboReward,general-purpose VLM reward models for robotics
+2606.18610,eval-reward-data,SC3-Eval,video world model as self-consistent policy evaluator
+2403.03950,scalable-value-learning,Stop Regressing,classification loss for value functions
+2410.20092,scalable-value-learning,OGBench,offline goal-conditioned RL benchmark
+2502.04327,scalable-value-learning,Value-Based RL Scales Predictably,UTD Pareto frontier
+2506.04168,scalable-value-learning,Horizon Reduction,horizon is the barrier to scaling offline RL
+2508.14881,scalable-value-learning,Compute-Optimal Scaling,TD-overfitting and compute allocation
+2510.22512,scalable-value-learning,Transitive RL,divide-and-conquer value learning
+2402.19446,llm-agent-rl,ArCHer,hierarchical multi-turn RL for LLM agents
+2406.11896,llm-agent-rl,DigiRL,autonomous RL for device-control agents
+2502.15760,llm-agent-rl,Digi-Q,VLM Q-functions for device control
+2412.13194,llm-agent-rl,PAE,proposer-agent-evaluator skill discovery
+2501.17161,llm-agent-rl,SFT Memorizes RL Generalizes,post-training generalization study
+2502.12118,llm-agent-rl,Scaling TTC w/o Verification,verifier-based scaling is superior
+2505.19590,llm-agent-rl,Intuitor,self-certainty as sole RL reward
+2506.01716,llm-agent-rl,Self-Challenging Agents,agents generate their own tasks
+2512.04601,llm-agent-rl,NLAC,natural language actor-critic
+2512.01457,llm-agent-rl,ZIP,zero-overhead introspection for adaptive compute
+2606.20008,llm-agent-rl,VIMPO,value-implicit policy optimization for LLMs
